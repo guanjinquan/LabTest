@@ -1,0 +1,5 @@
+from models.backbones.resnet_imagenet import ResNetImagenet as resnet_imagenet
+from models.backbones.resnet50_pathology import ResNetPathology as resnet50_pathology
+from models.backbones.swin_imagenet import SwinImageNet as swin_imagenet
+from models.backbones.vit_small_p16_imagenet import VitImagenet as vit_small_p16_imagenet
+from models.backbones.vit_small_p16_pathology import VitPathology as vit_small_p16_pathology
