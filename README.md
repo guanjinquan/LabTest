@@ -1,9 +1,12 @@
 # LabTest
 Classification Task on Pathology Images
 
+## Download Images
+Download data from Baidu Netdisk, link is given in the word file.
+
 
 ## Preprocess Pathology Images 
-In `LabTest/Misc/preprocess_data.py`, you should change the `input_dir` to downloaded data folder. 
+In `LabTest/Misc/preprocess_data.py`, you should change the `input_dir` global variable to downloaded data folder. 
 
 After that, run the script to preprocess the data. 
 
