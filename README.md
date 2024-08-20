@@ -1,6 +1,5 @@
 # LabTest
 Classification Task on Pathology Images
-<<<<<<< HEAD
 
 
 ## Preprocess Pathology Images 
@@ -22,5 +21,3 @@ bash ./Scripts/train_vit_small_pathology.sh
 
 Then, you can monitor the training process in `./Results/<model>/<runs_id>/results.png` and `./Results/<model>/<runs_id>/log.txt`.
 
-=======
->>>>>>> fab6777dc50445b46ea43516681dc3442027c327
