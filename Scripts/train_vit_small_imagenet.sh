@@ -1,6 +1,6 @@
 python /mnt/home/Guanjq/BackupWork/LabTest/Code/main_train.py \
     --runs_id "002_vit_small_p16_imagenet" \
-    --gpu_id "1" \
+    --gpu_id "0" \
     --seed 109 \
     --weight_decay 6e-5 \
     --learning_rate 1e-6 \

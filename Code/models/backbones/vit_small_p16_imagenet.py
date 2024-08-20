@@ -39,7 +39,8 @@ class VitImagenet(nn.Module):
         
         self.img_size = args.img_size
         self.extractor = get_vit(args) 
-    
+
+        # the embedding dim of vit small is 384
         self.neck = nn.Sequential(
             nn.Linear(384 * self.ensemble_num, 768),  # 0
             nn.LayerNorm(768), 
@@ -54,10 +55,9 @@ class VitImagenet(nn.Module):
         return [p for p in self.parameters() if p not in backbone_params]
 
     def forward(self, x):
-        assert x.shape[0] % self.ensemble_num == 0
-        x = self.extractor(x)
-        x = torch.reshape(x, (-1, 384 * self.ensemble_num))
-        return self.neck(x)
+        ## 自己实现 vit - small 的 forward 函数 
+        pass
+    
     
 if __name__ == "__main__":
     model = vit_small_patch16_224(pretrained=True)

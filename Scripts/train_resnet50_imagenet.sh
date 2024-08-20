@@ -1,7 +1,7 @@
 # GPU Memory Used: 6G
 python /mnt/home/Guanjq/BackupWork/LabTest/Code/main_train.py \
-    --runs_id "004_resnet50_imagenet" \
-    --gpu_id "1" \
+    --runs_id "001_resnet50_imagenet" \
+    --gpu_id "0" \
     --seed 109 \
     --weight_decay 6e-5 \
     --learning_rate 1e-6 \
