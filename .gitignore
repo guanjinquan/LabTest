@@ -5,9 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
-Checkpoints/*
-Results/*
-NpyData/*
+Checkpoints
+Results
+NpyData
 Data/NpyData
 Data/unused_data
 
