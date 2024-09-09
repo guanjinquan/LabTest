@@ -5,11 +5,12 @@ __pycache__/
 
 # C extensions
 *.so
-Checkpoints
-Results
-NpyData
-Data/NpyData
-Data/unused_data
+**__pycache__
+Checkpoints/
+Results/
+NpyData/
+Data/NpyData/
+Data/unused_data/
 
 # Distribution / packaging
 .Python
