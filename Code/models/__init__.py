@@ -24,6 +24,8 @@ class MyModel(nn.Module):
             
             nn.Linear(64, 2),
         )
+        
+        print("Params Size: ", sum(p.numel() for p in self.parameters()))
     
     # 这两个函数是为了获取backbone和head的参数，放入优化器的不同组中分别训练
     def get_backbone_params(self):
@@ -44,12 +46,8 @@ def GetModel(args):
         backbone = resnet_imagenet(args, 50)
     elif args.model == 'vit_small_p16_pathology':
         backbone = vit_small_p16_pathology(args)
-    elif args.model == 'swin_imagenet':
-        backbone = swin_imagenet(args)
     elif args.model == "vit_small_p16_imagenet":
         backbone = vit_small_p16_imagenet(args)
-    elif args.model == "resnet50_pathology":
-        backbone = resnet50_pathology(args)
     else:
         raise ValueError("model not supported")
     

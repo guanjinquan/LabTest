@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # Don't change this line and the file position
     os.chdir(os.path.dirname(__file__) + "/../")  
     
-    input_dir = "path to pathology data folder"  # setting the path to the folder containing the pathology data
+    input_dir = "/home/Guanjq/HuangData/PartialPathologyImages"  # setting the path to the folder containing the pathology data
     output_dir = "./Data/NpyData"
     os.makedirs(output_dir, exist_ok=True)
 

@@ -3,4 +3,4 @@ from models.backbones.vit_small_p16_imagenet import VitImagenet as vit_small_p16
 
 # task-3 need to construct these new models
 # from models.backbones.resnet50_pathology import ResNetPathology as resnet50_pathology
-# from models.backbones.vit_small_p16_pathology import VitPathology as vit_small_p16_pathology
+from models.backbones.vit_small_p16_pathology import VitPathology as vit_small_p16_pathology
