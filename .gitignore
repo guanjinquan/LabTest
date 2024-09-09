@@ -9,6 +9,7 @@ Checkpoints/*
 Results/*
 NpyData/*
 Data/NpyData
+Data/unused_data
 
 # Distribution / packaging
 .Python
